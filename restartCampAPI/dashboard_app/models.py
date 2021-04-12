@@ -49,22 +49,22 @@ class Trainer(models.Model):
 class Courses(models.Model):
     name = models.CharField(max_length = 100)
     description = models.CharField(max_length = 100, null=True, blank=True)
-    category = models.ForeignKey(CourseCategory, null=True, on_delete=models.CASCADE)
+    category = models.ForeignKey(CourseCategory, null=True, blank=True, on_delete=models.CASCADE)
     pret = models.FloatField()
-    discount = models.ForeignKey(Discount, null=True, on_delete=models.SET_NULL)
+    discount = models.ForeignKey(Discount, null=True, blank=True, on_delete=models.SET_NULL)
     free = models.BooleanField(default=True)
     active = models.BooleanField(default=True)
     logo = models.ImageField(null = True, blank = True, upload_to ='logo_courses/')
-    owner = models.ForeignKey(Owner, null = True, on_delete = models.SET_NULL)
-    trainer = models.ForeignKey(Trainer, null = True, on_delete = models.SET_NULL)
+    owner = models.ForeignKey(Owner, null = True, blank=True, on_delete = models.SET_NULL)
+    trainer = models.ForeignKey(Trainer, null = True, blank=True, on_delete = models.SET_NULL)
 
     def __str__(self):
         return self.name
 
 
 class OwnerPrc(models.Model):
-    owner = models.ForeignKey(Owner, null=True, on_delete=models.CASCADE)
-    course = models.ForeignKey(Courses, null=True, on_delete=models.CASCADE)
+    owner = models.ForeignKey(Owner, null=True, blank=True, on_delete=models.CASCADE)
+    course = models.ForeignKey(Courses, null=True, blank=True, on_delete=models.CASCADE)
     percentage = models.FloatField()
 
     def __str__(self):
@@ -72,8 +72,8 @@ class OwnerPrc(models.Model):
 
 
 class TrainerPrc(models.Model):
-    trainer = models.ForeignKey(Trainer, null=True, on_delete=models.CASCADE)
-    course = models.ForeignKey(Courses, null=True, on_delete=models.CASCADE)
+    trainer = models.ForeignKey(Trainer, null=True, blank=True, on_delete=models.CASCADE)
+    course = models.ForeignKey(Courses, null=True, blank=True, on_delete=models.CASCADE)
     percentage = models.FloatField()
 
     def __str__(self):
@@ -81,7 +81,7 @@ class TrainerPrc(models.Model):
 
 
 class Schedule(models.Model):
-    course = models.ForeignKey(Courses, null=True, on_delete=models.CASCADE)
+    course = models.ForeignKey(Courses, null=True, blank=True, on_delete=models.CASCADE)
     date = models.DateTimeField()
 
     def __str__(self):
