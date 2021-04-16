@@ -18,6 +18,21 @@ class Discount(models.Model):
         return self.discountCode
 
 
+class DiscountsPacks(models.Model):
+    name = models.CharField(max_length=50)
+    value = models.FloatField()
+
+    def __str__(self):
+        return self.name
+
+
+class Team(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+
+
 class Owner(models.Model):
     name = models.CharField(max_length=100)
     phone = models.CharField(max_length=20)
@@ -37,6 +52,7 @@ class Trainer(models.Model):
     phone = models.CharField(max_length=20)
     mail = models.CharField(max_length=100)
     dateCreation = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    team = models.ForeignKey(Team, null=True, blank=True, on_delete=models.DO_NOTHING)
     dateInactive = models.DateTimeField(null=True, blank=True)
     active = models.BooleanField(default=True)
     avatar = models.ImageField(null = True, blank = True, upload_to ='trainers/')
