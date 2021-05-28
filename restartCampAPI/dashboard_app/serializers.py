@@ -11,20 +11,25 @@ class DiscountSerializers(serializers.ModelSerializer):
 		model = Discount
 		fields = '__all__'
 
-class OwnerSerializers(serializers.ModelSerializer):
+class MemberSerializers(serializers.ModelSerializer):
+	team_name = serializers.ReadOnlyField(source='team.name')
 	class Meta:
-		model = Owner
-		fields = '__all__'
-
-class TrainerSerializers(serializers.ModelSerializer):
-	class Meta:
-		model = Trainer
-		fields = '__all__'
+		model = Member
+		fields = [field.name for field in model._meta.fields]
+		fields.append('team_name')
 
 class CoursesSerializers(serializers.ModelSerializer):
 	class Meta:
 		model = Courses
 		fields = '__all__'
+
+class LearnerSerializers(serializers.ModelSerializer):
+#	course_name = CoursesSerializers(many=True, read_only=True)
+	class Meta:
+		model = Learner
+		fields = '__all__'
+		depth = 1
+	#	fields.append('course_name')
 
 class OwnerPrcSerializers(serializers.ModelSerializer):
 	class Meta:
@@ -46,27 +51,34 @@ class JobDomainsSerializers(serializers.ModelSerializer):
 		model = JobDomains
 		fields = '__all__'
 
-class StudentsSerializers(serializers.ModelSerializer):
+# class LearnerSubmittedToCoursesSerializers(serializers.ModelSerializer):
+# 	class Meta:
+# 		model = LearnerSubmittedToCourses
+# 		fields = '__all__'
+
+class TeamRoleSerializers(serializers.ModelSerializer):
 	class Meta:
-		model = Students
+		model = TeamRole
 		fields = '__all__'
 
-class InvoiceSerializers(serializers.ModelSerializer):
+class TeamSerializers(serializers.ModelSerializer):
 	class Meta:
-		model = Invoice
+		model = Team
 		fields = '__all__'
 
-class SoldCoursesSerializers(serializers.ModelSerializer):
+class WorkExperienceSerializers(serializers.ModelSerializer):
 	class Meta:
-		model = SoldCourses
+		model = WorkExperience
 		fields = '__all__'
 
-class ParticipantsSerializers(serializers.ModelSerializer):
+
+class ViewCourseScheduleTrainerSerializers(serializers.ModelSerializer):
 	class Meta:
-		model = Participants
+		model = ViewCourseScheduleTrainer
 		fields = '__all__'
 
-class TargetsSerializers(serializers.ModelSerializer):
+
+class TestimonialsSerializers(serializers.ModelSerializer):
 	class Meta:
-		model = Targets
+		model = Testimonials
 		fields = '__all__'
