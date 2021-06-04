@@ -180,3 +180,11 @@ class Testimonials(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class MailPictures(models.Model):
+    name = models.CharField(max_length=100)
+    avatar = models.ImageField(null = True, blank = True, upload_to ='mail_pictures/')
+    
+    def __str__(self):
+        return self.name
