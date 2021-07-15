@@ -82,3 +82,21 @@ class TestimonialsSerializers(serializers.ModelSerializer):
 	class Meta:
 		model = Testimonials
 		fields = '__all__'
+
+
+class ContactSerializers(serializers.ModelSerializer):
+	class Meta:
+		model = Contact
+		fields = '__all__'
+
+
+class ViewPrezentaSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = ViewPrezenta
+        fields = '__all__'
+
+
+class PresenceSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = Presence
+        fields = '__all__'

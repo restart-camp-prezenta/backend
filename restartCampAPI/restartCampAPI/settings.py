@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-^rb8ua5+@1dbho4rm8cw_(lx)(#0l)5p6j)2f!yo4-^(emcbig
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['138.68.77.109', '127.0.0.1:80', '138.68.77.109:80', 'www.restart-camp.com', 'restart-camp.com']
 
 
 # Application definition
@@ -40,7 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'dashboard_app',
     'rest_framework',
-    'corsheaders'
+    'djoser',
+    'rest_framework.authtoken',
+    'rest_auth',
+#    'django.contrib.sites',
+    'corsheaders',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -117,6 +122,13 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -133,7 +145,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
@@ -150,3 +162,6 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
+
+CELERY_BROKER_URL = 'amqp://localhost'
+#CELERY_IMPORTS = ("dashboard_app.tasks", )

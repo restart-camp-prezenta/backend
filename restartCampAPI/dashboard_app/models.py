@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 class CourseCategory(models.Model):
@@ -33,6 +34,7 @@ class TeamRole(models.Model):
 
 
 class Member(models.Model):
+    user = models.OneToOneField(User, null=True, blank=True, on_delete=models.SET_NULL)
     firstName = models.CharField(max_length=100)
     lastName = models.CharField(max_length=100)
     phone = models.CharField(max_length=20, blank=True, null=True)
@@ -117,13 +119,14 @@ class WorkExperience(models.Model):
 
 class Learner(models.Model):
     REFERENCES_OPTIONS = [
-        ('FACEBOOK', 'FACEBOOK'),
-        ('INSTAGRAM','INSTAGRAM'),
-        ('LINKEDIN', 'LINKEDIN'),
-        ('RECLAME INTERNET', 'RECLAME INTERNET'),
-        ('RECLAME MEDIA', 'RECLAME MEDIA'),
-        ('PRIETENI', 'PRIETENI'),
-        ('ALTELE', 'ALTELE')
+        ('Facebook', 'Facebook'),
+        ('LinkedIn','LinkedIn'),
+        ('Instagram', 'Instagram'),
+        ('TikTok', 'TikTok'),
+        ('De la un prieten / o ruda', 'De la un prieten / o ruda'),
+        ('De la un coleg / colaborator', 'De la un coleg / colaborator'),
+        ('De la managerul meu', 'De la managerul meu'),
+        ('Alta sursa', 'Alta sursa'),
     ] 
 
     firstname = models.CharField(max_length=50)
@@ -139,8 +142,12 @@ class Learner(models.Model):
     #if is not career then is business
     is_career = models.BooleanField(default=True)
     is_business = models.BooleanField(default = False)
+    has_recommended =  models.BooleanField(default = False, null=True, blank=True)
+    has_participated = models.BooleanField(default = False, null=True, blank=True)
     course_registered = models.ManyToManyField(Courses, related_name='course_name')
     acord_gdpr = models.BooleanField(default=False)
+    allow_newsletter = models.BooleanField(default=True)
+
 
     def __str__(self):
         return self.firstname + ' ' + self.lastname
@@ -166,11 +173,52 @@ class ViewCourseScheduleTrainer(models.Model):
     lastname = models.CharField(db_column='lastName', max_length=100, blank=True, null=True)  # Field name made lowercase.
     date = models.DateTimeField(blank=True, null=True)
     coursetype = models.CharField(db_column='courseType', max_length=100, blank=True, null=True)  # Field name made lowercase.
+    courselink = models.CharField(db_column='courseLink', max_length=100, blank=True, null=True)  # Field name made lowercase.
+
 
     class Meta:
         managed = False  # Created from a view. Don't remove.
         db_table = 'view_course_schedule_trainer'    
 
+
+
+class ViewRegistredParticipants(models.Model):
+   # id = models.IntegerField(blank=True, null=False, primary_key=True)
+    firstname = models.CharField(max_length=50, blank=True, null=True)
+    lastname = models.CharField(max_length=50, blank=True, null=True)
+    mail = models.CharField(max_length=100, blank=True, null=True)
+    created_on = models.DateTimeField(blank=True, null=True)
+    date = models.DateTimeField(blank=True, null=True)
+    courselink = models.CharField(db_column='courseLink', max_length=100, blank=True, null=True)  # Field name made lowercase.
+    coursename = models.CharField(db_column='courseName', max_length=500, blank=True, null=True)  # Field name made lowercase.
+    days_from_register = models.FloatField(blank=True, null=True)
+    weeks_to_course = models.FloatField(blank=True, null=True)
+    course_week = models.FloatField(blank=True, null=True)
+    participant_registration_week = models.FloatField(blank=True, null=True)
+    week = models.IntegerField(blank=True, null=True)
+
+    class Meta:
+        managed = False  # Created from a view. Don't remove.
+        db_table = 'view_registred_participants'
+
+
+class ViewPrezenta(models.Model):
+    id = models.BigIntegerField(blank=True, null=False, primary_key=True)
+    courses_id = models.IntegerField(blank=True, null=True)
+    coursename = models.CharField(db_column='courseName', max_length=500, blank=True, null=True)  # Field name made lowercase.
+    trainerfirstname = models.CharField(db_column='trainerFirstName', max_length=100, blank=True, null=True)  # Field name made lowercase.
+    trainerlastname = models.CharField(db_column='trainerLastName', max_length=100, blank=True, null=True)  # Field name made lowercase.
+    trainer_id = models.IntegerField(blank=True, null=True)
+    learnerfirstname = models.CharField(db_column='learnerFirstName', max_length=50, blank=True, null=True)  # Field name made lowercase.
+    learnerlastname = models.CharField(db_column='learnerLastName', max_length=50, blank=True, null=True)  # Field name made lowercase.
+    learnermail = models.CharField(db_column='learnerMail', max_length=100, blank=True, null=True)  # Field name made lowercase.
+    learnerphone = models.CharField(db_column='learnerPhone', max_length=20, blank=True, null=True)  # Field name made lowercase.
+    learner_id = models.IntegerField(blank=True, null=True)
+    has_participated = models.BooleanField(null=True, blank=True)
+
+    class Meta:
+        managed = False  # Created from a view. Don't remove.
+        db_table = 'view_prezenta'
 
 
 class Testimonials(models.Model):
@@ -182,9 +230,19 @@ class Testimonials(models.Model):
         return self.name
 
 
-class MailPictures(models.Model):
-    name = models.CharField(max_length=100)
-    avatar = models.ImageField(null = True, blank = True, upload_to ='mail_pictures/')
-    
+class Contact(models.Model):
+    first_last_name = models.CharField(max_length = 100)
+    company = models.CharField(max_length = 100, null=True, blank=True)
+    email = models.CharField(max_length = 100, null=True, blank=True)
+    phone = models.CharField(max_length = 20, null=True, blank=True)
+    message = models.TextField(max_length=1500)
+    submited_date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+
     def __str__(self):
-        return self.name
+        return self.first_last_name
+
+
+class Presence(models.Model):
+    participant = models.ForeignKey(Learner, on_delete = models.CASCADE)
+    has_participated = models.BooleanField(default = False, null=True, blank=True)
+    course = models.ForeignKey(Schedule, on_delete=models.DO_NOTHING)

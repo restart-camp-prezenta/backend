@@ -1,0 +1,1316 @@
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+You are using `-A` as an option of the worker sub-command:
+celery worker -A celeryapp <...>
+
+The support for this usage was removed in Celery 5.0. Instead you should use `-A` as a global option:
+celery -A celeryapp worker <...>
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: -A
+[2021-06-16 14:07:25,923: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+ 
+ -------------- celery@dev v5.1.0 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-74-generic-x86_64-with-glibc2.29 2021-06-16 14:07:25
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         default:0x7fcfe5377f40 (.default.Loader)
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 5 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+
+
+[2021-06-16 14:07:26,079: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2021-06-16 14:07:26,091: INFO/MainProcess] mingle: searching for neighbors
+[2021-06-16 14:07:26,097: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2021-06-16 14:07:27,112: INFO/MainProcess] mingle: all alone
+[2021-06-16 14:07:27,123: INFO/MainProcess] celery@dev ready.
+[2021-06-16 14:07:27,124: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": ["Introducere \\u00een Social Media & Crearea Website-ului", "Introducere \\u00een Marketing & V\\u00e2nz\\u0103ri"], "send_to": "gabi1611@yahoo.com", "linkuri": ["https://us02web.zoom.us/meeting/register/tZMrfuGspzsqHtS25NfWOBMEFF8YNf3Qf8yq", "https://shoutout.wix.com/so/16NMO68oV/c?w=d4pZZSXhTdONFWA136xHsskv2ovHyyvsBW3DddGiYwk.eyJ1IjoiaHR0cH"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (431b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-16 14:07:54,078: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": ["Introducere \\u00een Social Media & Crearea Website-ului", "Introducere \\u00een Marketing & V\\u00e2nz\\u0103ri"], "send_to": "gabi1611@yahoo.com", "linkuri": ["https://us02web.zoom.us/meeting/register/tZMrfuGspzsqHtS25NfWOBMEFF8YNf3Qf8yq", "https://shoutout.wix.com/so/16NMO68oV/c?w=d4pZZSXhTdONFWA136xHsskv2ovHyyvsBW3DddGiYwk.eyJ1IjoiaHR0cH"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (431b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-16 14:28:35,408: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": ["Introducere \\u00een Social Media & Crearea Website-ului"], "send_to": "gabi1611@yahoo.com", "linkuri": ["https://us02web.zoom.us/meeting/register/tZMrfuGspzsqHtS25NfWOBMEFF8YNf3Qf8yq"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (274b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-16 14:33:46,033: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": ["Introducere \\u00een Social Media & Crearea Website-ului"], "send_to": "gabi1611@yahoo.com", "linkuri": ["https://us02web.zoom.us/meeting/register/tZMrfuGspzsqHtS25NfWOBMEFF8YNf3Qf8yq"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (274b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+
+worker: Warm shutdown (MainProcess)
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: --settings
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: --settings
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: --settings
+Usage: celery worker [OPTIONS]
+Try 'celery worker --help' for help.
+
+Error: no such option: --settings
+[2021-06-16 14:54:31,678: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+ 
+ -------------- celery@dev v5.1.0 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-74-generic-x86_64-with-glibc2.29 2021-06-16 14:54:31
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         default:0x7f89ec1f5f40 (.default.Loader)
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 5 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+
+
+[2021-06-16 14:54:31,858: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2021-06-16 14:54:31,870: INFO/MainProcess] mingle: searching for neighbors
+[2021-06-16 14:54:31,877: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2021-06-16 14:54:32,898: INFO/MainProcess] mingle: all alone
+[2021-06-16 14:54:32,911: INFO/MainProcess] celery@dev ready.
+[2021-06-16 14:55:52,106: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": ["Introducere \\u00een Personal Branding", "Introducere \\u00een Marketing & V\\u00e2nz\\u0103ri"], "send_to": "gabi1611@yahoo.com", "linkuri": ["https://shoutout.wix.com/so/16NMO68oV/c?w=ess4Rff2lLCC%2FfmffS0-0nLDwHIGGBkEWjKwZO2VYCE.eyJ1IjoiaHR0", "https://shoutout.wix.com/so/16NMO68oV/c?w=d4pZZSXhTdONFWA136xHsskv2ovHyyvsBW3DddGiYwk.eyJ1IjoiaHR0cH"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (436b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-17 06:34:30,759: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": [1], "send_to": "gabi1611@yahoo.com", "linkuri": ["www.google.com"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (155b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-17 06:39:54,773: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": ["Introducere \\u00een Social Media & Crearea Website-ului", "Introducere \\u00een Folosirea computerului & Crearea unui curs Online"], "send_to": "gabi1611@yahoo.com", "linkuri": ["https://us02web.zoom.us/meeting/register/tZMrfuGspzsqHtS25NfWOBMEFF8YNf3Qf8yq", "https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (451b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-17 06:51:48,499: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": [1], "send_to": "gabi1611@yahoo.com", "linkuri": ["www.google.com"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (155b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-17 06:53:16,836: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": [1], "send_to": "gabi1611@yahoo.com", "linkuri": ["www.google.com"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (155b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-17 06:53:38,653: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": [1], "send_to": "gabi1611@yahoo.com", "linkuri": ["www.google.com"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (155b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-17 06:57:54,133: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": [1], "send_to": "gabi1611@yahoo.com", "linkuri": ["www.google.com"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (155b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-18 08:20:36,621: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 326, in start
+    blueprint.start(self)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 618, in start
+    c.loop(*c.loop_args())
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/loops.py", line 81, in asynloop
+    next(loop)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/kombu/asynchronous/hub.py", line 361, in create_loop
+    cb(*cbargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/kombu/transport/base.py", line 235, in on_readable
+    reader(loop)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/kombu/transport/base.py", line 217, in _read
+    drain_events(timeout=0)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 523, in drain_events
+    while not self.blocking_read(timeout):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 529, in blocking_read
+    return self.on_inbound_frame(frame)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/method_framing.py", line 53, in on_frame
+    callback(channel, method_sig, buf, None)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 535, in on_inbound_method
+    return self.channels[channel_id].dispatch_method(
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/abstract_channel.py", line 143, in dispatch_method
+    listener(*args)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 664, in _on_close
+    self._x_close_ok()
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 679, in _x_close_ok
+    self.send_method(spec.Connection.CloseOk, callback=self._on_close_ok)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/abstract_channel.py", line 57, in send_method
+    conn.frame_writer(1, self.channel_id, sig, args, content)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/method_framing.py", line 183, in write_frame
+    write(view[:offset])
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/transport.py", line 352, in write
+    self._write(s)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[2021-06-18 08:20:36,623: WARNING/MainProcess] /home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py:361: CPendingDeprecationWarning: 
+In Celery 5.1 we introduced an optional breaking change which
+on connection loss cancels all currently executed tasks with late acknowledgement enabled.
+These tasks cannot be acknowledged as the connection is gone, and the tasks are automatically redelivered back to the queue.
+You can enable this behavior using the worker_cancel_long_running_tasks_on_connection_loss setting.
+In Celery 5.1 it is set to False by default. The setting will be set to True by default in Celery 6.0.
+
+  warnings.warn(CANCEL_TASKS_BY_DEFAULT, CPendingDeprecationWarning)
+
+[2021-06-18 08:20:36,630: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds... (1/100)
+
+[2021-06-18 08:20:38,640: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds... (2/100)
+
+[2021-06-18 08:20:42,650: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds... (3/100)
+
+[2021-06-18 08:20:48,665: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2021-06-18 08:20:48,675: INFO/MainProcess] mingle: searching for neighbors
+[2021-06-18 08:20:49,698: INFO/MainProcess] mingle: all alone
+[2021-06-18 08:22:45,834: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": ["Introducere \\u00een Design Grafic - User Experience & User Interface"], "send_to": "gabi1611@yahoo.com", "linkuri": ["https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (287b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-18 08:26:39,829: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": ["Introducere \\u00een Design Grafic - User Experience & User Interface"], "send_to": "gabi1611@yahoo.com", "linkuri": ["https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (287b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-18 08:37:41,116: ERROR/MainProcess] Received unregistered task of type 'send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": ["Introducere \\u00een Social Media & Crearea Website-ului"], "send_to": "gabi1611@yahoo.com", "linkuri": ["https://us02web.zoom.us/meeting/register/tZMrfuGspzsqHtS25NfWOBMEFF8YNf3Qf8yq"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (274b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'send_registrations_mail_task'
+[2021-06-18 08:38:41,380: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 326, in start
+    blueprint.start(self)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 618, in start
+    c.loop(*c.loop_args())
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/loops.py", line 81, in asynloop
+    next(loop)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/kombu/asynchronous/hub.py", line 361, in create_loop
+    cb(*cbargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/kombu/transport/base.py", line 235, in on_readable
+    reader(loop)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/kombu/transport/base.py", line 217, in _read
+    drain_events(timeout=0)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 523, in drain_events
+    while not self.blocking_read(timeout):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 529, in blocking_read
+    return self.on_inbound_frame(frame)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/method_framing.py", line 53, in on_frame
+    callback(channel, method_sig, buf, None)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 535, in on_inbound_method
+    return self.channels[channel_id].dispatch_method(
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/abstract_channel.py", line 143, in dispatch_method
+    listener(*args)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 664, in _on_close
+    self._x_close_ok()
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 679, in _x_close_ok
+    self.send_method(spec.Connection.CloseOk, callback=self._on_close_ok)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/abstract_channel.py", line 57, in send_method
+    conn.frame_writer(1, self.channel_id, sig, args, content)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/method_framing.py", line 183, in write_frame
+    write(view[:offset])
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/transport.py", line 352, in write
+    self._write(s)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[2021-06-18 08:38:41,381: WARNING/MainProcess] /home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py:361: CPendingDeprecationWarning: 
+In Celery 5.1 we introduced an optional breaking change which
+on connection loss cancels all currently executed tasks with late acknowledgement enabled.
+These tasks cannot be acknowledged as the connection is gone, and the tasks are automatically redelivered back to the queue.
+You can enable this behavior using the worker_cancel_long_running_tasks_on_connection_loss setting.
+In Celery 5.1 it is set to False by default. The setting will be set to True by default in Celery 6.0.
+
+  warnings.warn(CANCEL_TASKS_BY_DEFAULT, CPendingDeprecationWarning)
+
+[2021-06-18 08:38:41,387: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds... (1/100)
+
+[2021-06-18 08:38:43,395: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds... (2/100)
+
+[2021-06-18 08:38:47,406: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds... (3/100)
+
+[2021-06-18 08:38:53,421: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2021-06-18 08:38:53,432: INFO/MainProcess] mingle: searching for neighbors
+[2021-06-18 08:38:54,457: INFO/MainProcess] mingle: all alone
+[2021-06-18 11:26:06,314: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_registrations_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"courses": ["Introducere \\u00een Social Media & Crearea Website-ului", "Introducere \\u00een Scrierea Planului de Afaceri"], "send_to": "gabi1611@yahoo.com", "linkuri": ["https://us02web.zoom.us/meeting/register/tZMrfuGspzsqHtS25NfWOBMEFF8YNf3Qf8yq", "https://shoutout.wix.com/so/16NMO68oV/c?w=wXMR41e3AHLTTGL-nVcr4oNrB-p5JGd9-laJjeao24Q.eyJ1IjoiaHR0cH"]}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (430b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_registrations_mail_task'
+
+worker: Warm shutdown (MainProcess)
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+
+Error: Invalid value for '-A' / '--app': 
+Unable to load celery application.
+The module restartCampAPI was not found.
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+
+Error: Invalid value for '-A' / '--app': 
+Unable to load celery application.
+The module restartCampAPI was not found.
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+
+Error: Invalid value for '-A' / '--app': 
+Unable to load celery application.
+The module restartCampAPI was not found.
+Usage: celery [OPTIONS] COMMAND [ARGS]...
+
+Error: Invalid value for '-A' / '--app': 
+Unable to load celery application.
+The module restartCampAPI was not found.
+[2021-06-18 11:44:10,920: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+ 
+ -------------- celery@dev v5.1.0 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-74-generic-x86_64-with-glibc2.29 2021-06-18 11:44:10
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         restartCampAPI:0x7fcfc90032e0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 5 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . dashboard_app.tasks.send_registrations_mail_task
+  . restartCampAPI.celery.debug_task
+
+[2021-06-18 11:44:11,293: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2021-06-18 11:44:11,303: INFO/MainProcess] mingle: searching for neighbors
+[2021-06-18 11:44:11,309: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2021-06-18 11:44:12,326: INFO/MainProcess] mingle: all alone
+[2021-06-18 11:44:12,343: WARNING/MainProcess] /home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2021-06-18 11:44:12,343: INFO/MainProcess] celery@dev ready.
+[2021-06-18 11:44:36,751: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[113a536f-478d-46f4-a0e3-b768ed6920c5] received
+[2021-06-18 11:44:36,753: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[113a536f-478d-46f4-a0e3-b768ed6920c5]: Sent registration mail
+[2021-06-18 11:44:36,754: ERROR/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[113a536f-478d-46f4-a0e3-b768ed6920c5] raised unexpected: NameError("name 'send_registrations_mail' is not defined")
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/tasks.py", line 21, in send_registrations_mail_task
+    return send_registrations_mail(courses = registered_courses, send_to = receiver_email, linkuri = linkuri)
+NameError: name 'send_registrations_mail' is not defined
+[2021-06-18 11:46:25,807: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[5c00ea2a-1630-48b3-a325-dfabaa4de583] received
+[2021-06-18 11:46:25,808: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[5c00ea2a-1630-48b3-a325-dfabaa4de583]: Sent registration mail
+[2021-06-18 11:46:25,809: ERROR/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[5c00ea2a-1630-48b3-a325-dfabaa4de583] raised unexpected: NameError("name 'send_registrations_mail' is not defined")
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/tasks.py", line 21, in send_registrations_mail_task
+    return send_registration_mail(courses = registered_courses, send_to = receiver_email, linkuri = linkuri)
+NameError: name 'send_registrations_mail' is not defined
+[2021-06-18 11:49:46,762: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 326, in start
+    blueprint.start(self)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 618, in start
+    c.loop(*c.loop_args())
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/loops.py", line 81, in asynloop
+    next(loop)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/kombu/asynchronous/hub.py", line 361, in create_loop
+    cb(*cbargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/kombu/transport/base.py", line 235, in on_readable
+    reader(loop)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/kombu/transport/base.py", line 217, in _read
+    drain_events(timeout=0)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 523, in drain_events
+    while not self.blocking_read(timeout):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 529, in blocking_read
+    return self.on_inbound_frame(frame)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/method_framing.py", line 53, in on_frame
+    callback(channel, method_sig, buf, None)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 535, in on_inbound_method
+    return self.channels[channel_id].dispatch_method(
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/abstract_channel.py", line 143, in dispatch_method
+    listener(*args)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 665, in _on_close
+    raise error_for_code(reply_code, reply_text,
+amqp.exceptions.ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+[2021-06-18 11:49:46,764: WARNING/MainProcess] /home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py:361: CPendingDeprecationWarning: 
+In Celery 5.1 we introduced an optional breaking change which
+on connection loss cancels all currently executed tasks with late acknowledgement enabled.
+These tasks cannot be acknowledged as the connection is gone, and the tasks are automatically redelivered back to the queue.
+You can enable this behavior using the worker_cancel_long_running_tasks_on_connection_loss setting.
+In Celery 5.1 it is set to False by default. The setting will be set to True by default in Celery 6.0.
+
+  warnings.warn(CANCEL_TASKS_BY_DEFAULT, CPendingDeprecationWarning)
+
+[2021-06-18 11:49:46,772: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds... (1/100)
+
+[2021-06-18 11:49:48,782: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds... (2/100)
+
+[2021-06-18 11:49:52,796: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds... (3/100)
+
+[2021-06-18 11:49:58,811: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2021-06-18 11:49:58,822: INFO/MainProcess] mingle: searching for neighbors
+[2021-06-18 11:49:59,843: INFO/MainProcess] mingle: all alone
+[2021-06-18 11:50:13,476: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[635e2245-56f8-426b-916a-a378058a1f4e] received
+[2021-06-18 11:50:13,477: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[635e2245-56f8-426b-916a-a378058a1f4e]: Sent registration mail
+[2021-06-18 11:50:13,478: ERROR/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[635e2245-56f8-426b-916a-a378058a1f4e] raised unexpected: NameError("name 'send_registrations_mail' is not defined")
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/tasks.py", line 21, in send_registrations_mail_task
+    return send_registration_mail(courses = registered_courses, send_to = receiver_email, linkuri = linkuri)
+NameError: name 'send_registrations_mail' is not defined
+[2021-06-18 11:53:25,164: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[ddb02606-214f-43cc-95a6-ec4c1953d441] received
+[2021-06-18 11:53:25,165: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[ddb02606-214f-43cc-95a6-ec4c1953d441]: Sent registration mail
+[2021-06-18 11:53:25,166: ERROR/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[ddb02606-214f-43cc-95a6-ec4c1953d441] raised unexpected: NameError("name 'send_registrations_mail' is not defined")
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/tasks.py", line 21, in send_registrations_mail_task
+    return send_registration_mail(courses = courses, send_to = send_to, linkuri = linkuri)
+NameError: name 'send_registrations_mail' is not defined
+[2021-06-18 11:58:21,012: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[81b4b179-3e18-4912-9c17-bb42252050e9] received
+[2021-06-18 11:58:21,013: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[81b4b179-3e18-4912-9c17-bb42252050e9]: Sent registration mail
+[2021-06-18 11:58:21,013: ERROR/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[81b4b179-3e18-4912-9c17-bb42252050e9] raised unexpected: NameError("name 'send_registrations_mail' is not defined")
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/tasks.py", line 21, in send_registrations_mail_task
+    return srm(courses = courses, send_to = send_to, linkuri = linkuri)
+NameError: name 'send_registrations_mail' is not defined
+[2021-06-18 12:00:25,453: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[d30b68fb-979e-48e5-b0b9-aba75670390b] received
+[2021-06-18 12:00:25,454: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[d30b68fb-979e-48e5-b0b9-aba75670390b]: Sent registration mail
+[2021-06-18 12:00:25,455: ERROR/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[d30b68fb-979e-48e5-b0b9-aba75670390b] raised unexpected: NameError("name 'send_registrations_mail' is not defined")
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/tasks.py", line 21, in send_registrations_mail_task
+    return srm(courses = courses, send_to = send_to, linkuri = linkuri)
+NameError: name 'send_registrations_mail' is not defined
+[2021-06-18 12:03:09,368: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[4ccd1bab-3b56-47ac-b588-9554bdd241ad] received
+[2021-06-18 12:03:09,369: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[4ccd1bab-3b56-47ac-b588-9554bdd241ad]: Sent registration mail
+[2021-06-18 12:03:09,370: ERROR/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[4ccd1bab-3b56-47ac-b588-9554bdd241ad] raised unexpected: NameError("name 'send_registrations_mail' is not defined")
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/tasks.py", line 21, in send_registrations_mail_task
+    return send_registrations_mail(courses = courses, send_to = send_to, linkuri = linkuri)
+NameError: name 'send_registrations_mail' is not defined
+
+worker: Warm shutdown (MainProcess)
+[2021-06-18 12:06:00,049: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+ 
+ -------------- celery@dev v5.1.0 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-74-generic-x86_64-with-glibc2.29 2021-06-18 12:06:00
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         restartCampAPI:0x7f4fe93442e0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 5 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . dashboard_app.tasks.send_registrations_mail_task
+  . restartCampAPI.celery.debug_task
+
+[2021-06-18 12:06:00,416: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds... (1/100)
+
+[2021-06-18 12:06:02,427: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds... (2/100)
+
+[2021-06-18 12:06:06,441: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2021-06-18 12:06:06,450: INFO/MainProcess] mingle: searching for neighbors
+[2021-06-18 12:06:06,457: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2021-06-18 12:06:07,473: INFO/MainProcess] mingle: all alone
+[2021-06-18 12:06:07,489: WARNING/MainProcess] /home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2021-06-18 12:06:07,489: INFO/MainProcess] celery@dev ready.
+[2021-06-18 12:06:35,036: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[c81c6324-c112-4ea9-a7eb-ba55996841ce] received
+[2021-06-18 12:06:35,037: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[c81c6324-c112-4ea9-a7eb-ba55996841ce]: Sent registration mail
+[2021-06-18 12:06:37,431: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[c81c6324-c112-4ea9-a7eb-ba55996841ce] succeeded in 2.3935845510000036s: None
+[2021-06-18 13:08:23,019: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_contact_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {"name": "Test Test", "company": " - ", "email": "gabi1611@yahoo.com", "phone": "0736929749", "message": "Nu"}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (185b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_contact_mail_task'
+
+worker: Warm shutdown (MainProcess)
+[2021-06-18 13:14:12,569: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+ 
+ -------------- celery@dev v5.1.0 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-74-generic-x86_64-with-glibc2.29 2021-06-18 13:14:12
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         restartCampAPI:0x7fd0edfd52e0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 5 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . dashboard_app.tasks.send_contact_mail_task
+  . dashboard_app.tasks.send_registrations_mail_task
+  . restartCampAPI.celery.debug_task
+
+[2021-06-18 13:14:12,967: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds... (1/100)
+
+[2021-06-18 13:14:14,982: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2021-06-18 13:14:14,995: INFO/MainProcess] mingle: searching for neighbors
+[2021-06-18 13:14:15,002: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2021-06-18 13:14:16,023: INFO/MainProcess] mingle: all alone
+[2021-06-18 13:14:16,041: WARNING/MainProcess] /home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2021-06-18 13:14:16,041: INFO/MainProcess] celery@dev ready.
+[2021-06-18 13:16:20,441: INFO/MainProcess] Task dashboard_app.tasks.send_contact_mail_task[b51da8d1-f4cc-45cc-82c6-23e2122b397e] received
+[2021-06-18 13:16:20,442: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_contact_mail_task[b51da8d1-f4cc-45cc-82c6-23e2122b397e]: Sent contact mail
+[2021-06-18 13:16:21,242: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_contact_mail_task[b51da8d1-f4cc-45cc-82c6-23e2122b397e] succeeded in 0.8000409190000255s: None
+[2021-06-20 12:37:31,261: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_remainder_mail'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_remainder_mail'
+
+worker: Warm shutdown (MainProcess)
+[2021-06-20 12:39:42,712: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+ 
+ -------------- celery@dev v5.1.0 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-74-generic-x86_64-with-glibc2.29 2021-06-20 12:39:42
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         restartCampAPI:0x7f1bedb342e0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 5 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . dashboard_app.tasks.send_contact_mail_task
+  . dashboard_app.tasks.send_registrations_mail_task
+  . dashboard_app.tasks.send_remainder_mail
+  . restartCampAPI.celery.debug_task
+
+[2021-06-20 12:39:43,042: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds... (1/100)
+
+[2021-06-20 12:39:45,052: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2021-06-20 12:39:45,064: INFO/MainProcess] mingle: searching for neighbors
+[2021-06-20 12:39:45,070: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2021-06-20 12:39:46,085: INFO/MainProcess] mingle: all alone
+[2021-06-20 12:39:46,097: WARNING/MainProcess] /home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2021-06-20 12:39:46,098: INFO/MainProcess] celery@dev ready.
+[2021-06-20 12:40:41,506: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[22c4ef52-e68f-4653-90ad-84843e9a73cd] received
+[2021-06-20 12:40:41,554: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[22c4ef52-e68f-4653-90ad-84843e9a73cd]: Sent weekly mail
+[2021-06-20 12:40:41,554: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[22c4ef52-e68f-4653-90ad-84843e9a73cd]: {'gabi1611@yahoo.com': [('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN')], 'alina.anghel1@gmail.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 12:40:41,910: ERROR/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[22c4ef52-e68f-4653-90ad-84843e9a73cd] raised unexpected: NameError("name 'name' is not defined")
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/tasks.py", line 44, in send_remainder_mail
+    return send_weekly_mail (send_mails_to)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/send_mails.py", line 562, in send_weekly_mail
+    msgText = MIMEText('{}, de la compania: {}, cu mail: {} si numar de telefon: {}, a transmis urmatorul mesaj: "{}"'.format(name, company, email, phone, message))
+NameError: name 'name' is not defined
+[2021-06-20 12:42:41,517: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[bc32fc7a-79b1-4596-b288-50f1f866c324] received
+[2021-06-20 12:42:41,546: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[bc32fc7a-79b1-4596-b288-50f1f866c324]: Sent weekly mail
+[2021-06-20 12:42:41,546: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[bc32fc7a-79b1-4596-b288-50f1f866c324]: {'gabi1611@yahoo.com': [('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN')], 'alina.anghel1@gmail.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 12:42:41,770: ERROR/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[bc32fc7a-79b1-4596-b288-50f1f866c324] raised unexpected: NameError("name 'name' is not defined")
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/tasks.py", line 44, in send_remainder_mail
+    return send_weekly_mail (send_mails_to)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/send_mails.py", line 562, in send_weekly_mail
+    for mail, info in course_info.items():
+NameError: name 'name' is not defined
+[2021-06-20 12:44:41,511: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[1d83c2a2-17f6-4568-84c2-ef31d6cfc8a7] received
+[2021-06-20 12:44:41,532: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[1d83c2a2-17f6-4568-84c2-ef31d6cfc8a7]: Sent weekly mail
+[2021-06-20 12:44:41,533: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[1d83c2a2-17f6-4568-84c2-ef31d6cfc8a7]: {'gabi1611@yahoo.com': [('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN')], 'alina.anghel1@gmail.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 12:44:41,669: ERROR/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[1d83c2a2-17f6-4568-84c2-ef31d6cfc8a7] raised unexpected: NameError("name 'name' is not defined")
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 450, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/app/trace.py", line 731, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/tasks.py", line 44, in send_remainder_mail
+    return send_weekly_mail (send_mails_to)
+  File "/home/dev/backend/restartCampAPI/dashboard_app/send_mails.py", line 562, in send_weekly_mail
+    for mail, info in course_info.items():
+NameError: name 'name' is not defined
+
+worker: Warm shutdown (MainProcess)
+[2021-06-20 12:46:09,146: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+ 
+ -------------- celery@dev v5.1.0 (sun-harmonics)
+--- ***** ----- 
+-- ******* ---- Linux-5.4.0-74-generic-x86_64-with-glibc2.29 2021-06-20 12:46:09
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         restartCampAPI:0x7fcfdb37c2e0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 5 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . dashboard_app.tasks.send_contact_mail_task
+  . dashboard_app.tasks.send_registrations_mail_task
+  . dashboard_app.tasks.send_remainder_mail
+  . restartCampAPI.celery.debug_task
+
+[2021-06-20 12:46:09,500: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds... (1/100)
+
+[2021-06-20 12:46:11,511: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2021-06-20 12:46:11,525: INFO/MainProcess] mingle: searching for neighbors
+[2021-06-20 12:46:11,531: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2021-06-20 12:46:12,547: INFO/MainProcess] mingle: all alone
+[2021-06-20 12:46:12,564: WARNING/MainProcess] /home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2021-06-20 12:46:12,565: INFO/MainProcess] celery@dev ready.
+[2021-06-20 12:55:13,138: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[330cc86a-1e50-43ac-8abd-e89eaa03729b] received
+[2021-06-20 12:55:13,207: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[330cc86a-1e50-43ac-8abd-e89eaa03729b]: Sent weekly mail
+[2021-06-20 12:55:13,207: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[330cc86a-1e50-43ac-8abd-e89eaa03729b]: {'gabi1611@yahoo.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')], 'alina.anghel1@gmail.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 12:55:14,693: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[330cc86a-1e50-43ac-8abd-e89eaa03729b] succeeded in 1.5528153689999726s: None
+[2021-06-20 12:57:13,119: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[585d1b12-a1ad-4d2f-9f79-fe0c3c053c55] received
+[2021-06-20 12:57:13,140: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[585d1b12-a1ad-4d2f-9f79-fe0c3c053c55]: Sent weekly mail
+[2021-06-20 12:57:13,140: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[585d1b12-a1ad-4d2f-9f79-fe0c3c053c55]: {'gabi1611@yahoo.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')], 'alina.anghel1@gmail.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 12:57:14,083: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[585d1b12-a1ad-4d2f-9f79-fe0c3c053c55] succeeded in 0.9636736280000378s: None
+[2021-06-20 13:04:57,093: INFO/MainProcess] beat: Starting...
+[2021-06-20 13:04:57,166: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-06-20 13:04:57,176: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[8ff92597-840f-4028-8058-0f003184275f] received
+[2021-06-20 13:04:57,198: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[8ff92597-840f-4028-8058-0f003184275f]: Sent weekly mail
+[2021-06-20 13:04:57,198: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[8ff92597-840f-4028-8058-0f003184275f]: {'gabi1611@yahoo.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')], 'alina.anghel1@gmail.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 13:05:02,339: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[8ff92597-840f-4028-8058-0f003184275f] succeeded in 5.162640206999868s: None
+[2021-06-20 13:06:57,159: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-06-20 13:06:57,163: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[c0ba6f42-6325-41ab-abea-be4e2fdbd7be] received
+[2021-06-20 13:06:57,183: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[c0ba6f42-6325-41ab-abea-be4e2fdbd7be]: Sent weekly mail
+[2021-06-20 13:06:57,183: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[c0ba6f42-6325-41ab-abea-be4e2fdbd7be]: {'gabi1611@yahoo.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')], 'alina.anghel1@gmail.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 13:06:58,138: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[c0ba6f42-6325-41ab-abea-be4e2fdbd7be] succeeded in 0.9748087749999286s: None
+[2021-06-20 13:08:57,163: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-06-20 13:08:57,166: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[7f246609-8015-4bfb-a4d3-74239630936a] received
+[2021-06-20 13:08:57,190: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[7f246609-8015-4bfb-a4d3-74239630936a]: Sent weekly mail
+[2021-06-20 13:08:57,190: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[7f246609-8015-4bfb-a4d3-74239630936a]: {'gabi1611@yahoo.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')], 'alina.anghel1@gmail.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 13:08:58,287: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[7f246609-8015-4bfb-a4d3-74239630936a] succeeded in 1.1207514470002025s: None
+[2021-06-20 13:10:57,166: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-06-20 13:10:57,168: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[0cfbc346-3108-4ad7-9a7f-b0cadfc17dff] received
+[2021-06-20 13:10:57,190: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[0cfbc346-3108-4ad7-9a7f-b0cadfc17dff]: Sent weekly mail
+[2021-06-20 13:10:57,190: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[0cfbc346-3108-4ad7-9a7f-b0cadfc17dff]: {'gabi1611@yahoo.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')], 'alina.anghel1@gmail.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 13:10:58,142: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[0cfbc346-3108-4ad7-9a7f-b0cadfc17dff] succeeded in 0.9725350510000226s: None
+[2021-06-20 13:12:02,370: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2021-06-20 13:12:57,170: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2021-06-20 13:12:57,204: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-06-20 13:12:57,206: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[d7597e1d-7fb8-4297-af1f-fe66ae373c0a] received
+[2021-06-20 13:12:57,235: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[d7597e1d-7fb8-4297-af1f-fe66ae373c0a]: Sent weekly mail
+[2021-06-20 13:12:57,236: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[d7597e1d-7fb8-4297-af1f-fe66ae373c0a]: {'gabi1611@yahoo.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')], 'alina.anghel1@gmail.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 13:12:58,506: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[d7597e1d-7fb8-4297-af1f-fe66ae373c0a] succeeded in 1.2991260290000355s: None
+[2021-06-20 13:14:57,207: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-06-20 13:14:57,209: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[01aa8578-e401-4d53-98c1-68117e9823e6] received
+[2021-06-20 13:14:57,231: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[01aa8578-e401-4d53-98c1-68117e9823e6]: Sent weekly mail
+[2021-06-20 13:14:57,231: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[01aa8578-e401-4d53-98c1-68117e9823e6]: {'gabi1611@yahoo.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')], 'alina.anghel1@gmail.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 13:14:58,014: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[01aa8578-e401-4d53-98c1-68117e9823e6] succeeded in 0.8041839309998977s: None
+[2021-06-20 13:16:57,210: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-06-20 13:16:57,212: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[866726f9-6ca8-4f8c-afd6-e3a2489f7191] received
+[2021-06-20 13:16:57,230: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[866726f9-6ca8-4f8c-afd6-e3a2489f7191]: Sent weekly mail
+[2021-06-20 13:16:57,230: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[866726f9-6ca8-4f8c-afd6-e3a2489f7191]: {'gabi1611@yahoo.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 13:16:57,995: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[866726f9-6ca8-4f8c-afd6-e3a2489f7191] succeeded in 0.7825141309999708s: None
+[2021-06-20 13:18:57,215: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-06-20 13:18:57,217: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[0186081b-c2ad-4e8f-b064-5337a0751a36] received
+[2021-06-20 13:18:57,235: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[0186081b-c2ad-4e8f-b064-5337a0751a36]: Sent weekly mail
+[2021-06-20 13:18:57,235: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[0186081b-c2ad-4e8f-b064-5337a0751a36]: {'gabi1611@yahoo.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 13:18:57,783: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[0186081b-c2ad-4e8f-b064-5337a0751a36] succeeded in 0.5653716849999455s: None
+[2021-06-20 13:20:12,450: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2021-06-20 13:20:57,602: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2021-06-20 13:20:57,637: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2021-06-20 13:25:00,002: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-06-20 13:25:00,005: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[229276a8-9c54-4278-a424-3f7f7d5c8cec] received
+[2021-06-20 13:25:00,028: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[229276a8-9c54-4278-a424-3f7f7d5c8cec]: Sent weekly mail
+[2021-06-20 13:25:00,028: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[229276a8-9c54-4278-a424-3f7f7d5c8cec]: {'gabi1611@yahoo.com': [('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 24, 18, 30, tzinfo=<UTC>), 'https://us02web.zoom.us/meeting/register/tZcsf-qvqjIsE9NQBnWwNchKD254KU6fmraN'), ('Introducere în Design Grafic - User Experience & User Interface', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH'), ('Introducere în Folosirea computerului & Crearea unui curs Online', datetime.datetime(2021, 6, 22, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=KXZrZTDTUGyrjzOFGQNB5E-35CRM1Jbgc-jtXK1AREM.eyJ1IjoiaHR0cH')]}
+[2021-06-20 13:25:00,603: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[229276a8-9c54-4278-a424-3f7f7d5c8cec] succeeded in 0.5968002100003105s: None
+[2021-06-20 13:28:10,551: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2021-06-21 04:00:00,008: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-06-21 04:00:00,011: INFO/MainProcess] Task celery.backend_cleanup[4fb82049-92c5-48c0-aa5a-78ef86f04513] received
+[2021-06-21 04:00:00,012: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[4fb82049-92c5-48c0-aa5a-78ef86f04513] succeeded in 0.00026050299493363127s: None
+[2021-06-22 04:00:00,011: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-06-22 04:00:00,018: INFO/MainProcess] Task celery.backend_cleanup[6194bad9-28d0-441b-af5f-0a5bc564af35] received
+[2021-06-22 04:00:00,019: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[6194bad9-28d0-441b-af5f-0a5bc564af35] succeeded in 0.00015239400090649724s: None
+[2021-06-23 04:00:00,002: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-06-23 04:00:00,008: INFO/MainProcess] Task celery.backend_cleanup[f90a8e53-6d4b-433e-bb84-f6e67f824c87] received
+[2021-06-23 04:00:00,009: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[f90a8e53-6d4b-433e-bb84-f6e67f824c87] succeeded in 0.00019685400184243917s: None
+[2021-06-23 15:45:23,683: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[ebf1c6f3-e829-4eca-9729-ba53d6d8ddba] received
+[2021-06-23 15:45:23,684: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[ebf1c6f3-e829-4eca-9729-ba53d6d8ddba]: Sent registration mail
+[2021-06-23 15:45:26,111: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[ebf1c6f3-e829-4eca-9729-ba53d6d8ddba] succeeded in 2.427113500016276s: None
+[2021-06-24 04:00:00,002: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-06-24 04:00:00,004: INFO/MainProcess] Task celery.backend_cleanup[9153511f-30cc-4986-b433-d1e3b5e2abdd] received
+[2021-06-24 04:00:00,006: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[9153511f-30cc-4986-b433-d1e3b5e2abdd] succeeded in 0.00020936201326549053s: None
+[2021-06-25 04:00:00,007: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-06-25 04:00:00,009: INFO/MainProcess] Task celery.backend_cleanup[0e88b1c4-bfc5-4e87-86bd-353edb5febeb] received
+[2021-06-25 04:00:00,010: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[0e88b1c4-bfc5-4e87-86bd-353edb5febeb] succeeded in 0.00023740704637020826s: None
+[2021-06-25 06:52:47,517: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 326, in start
+    blueprint.start(self)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 618, in start
+    c.loop(*c.loop_args())
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/loops.py", line 81, in asynloop
+    next(loop)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/kombu/asynchronous/hub.py", line 361, in create_loop
+    cb(*cbargs)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/kombu/transport/base.py", line 235, in on_readable
+    reader(loop)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/kombu/transport/base.py", line 217, in _read
+    drain_events(timeout=0)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 523, in drain_events
+    while not self.blocking_read(timeout):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 529, in blocking_read
+    return self.on_inbound_frame(frame)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/method_framing.py", line 53, in on_frame
+    callback(channel, method_sig, buf, None)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 535, in on_inbound_method
+    return self.channels[channel_id].dispatch_method(
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/abstract_channel.py", line 143, in dispatch_method
+    listener(*args)
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/amqp/connection.py", line 665, in _on_close
+    raise error_for_code(reply_code, reply_text,
+amqp.exceptions.ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+[2021-06-25 06:52:47,527: WARNING/MainProcess] /home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py:361: CPendingDeprecationWarning: 
+In Celery 5.1 we introduced an optional breaking change which
+on connection loss cancels all currently executed tasks with late acknowledgement enabled.
+These tasks cannot be acknowledged as the connection is gone, and the tasks are automatically redelivered back to the queue.
+You can enable this behavior using the worker_cancel_long_running_tasks_on_connection_loss setting.
+In Celery 5.1 it is set to False by default. The setting will be set to True by default in Celery 6.0.
+
+  warnings.warn(CANCEL_TASKS_BY_DEFAULT, CPendingDeprecationWarning)
+
+[2021-06-25 06:52:47,537: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds... (1/100)
+
+[2021-06-25 06:52:49,546: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds... (2/100)
+
+[2021-06-25 06:52:53,557: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds... (3/100)
+
+[2021-06-25 06:52:59,573: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2021-06-25 06:52:59,587: INFO/MainProcess] mingle: searching for neighbors
+[2021-06-25 06:53:00,613: INFO/MainProcess] mingle: all alone
+[2021-06-25 13:00:00,004: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-06-25 13:00:00,016: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[1b2276ec-6f46-4b05-bd42-3016f120e030] received
+[2021-06-25 13:00:00,030: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[1b2276ec-6f46-4b05-bd42-3016f120e030]: Sent weekly mail
+[2021-06-25 13:00:00,030: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[1b2276ec-6f46-4b05-bd42-3016f120e030]: {}
+[2021-06-25 13:00:00,444: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[1b2276ec-6f46-4b05-bd42-3016f120e030] succeeded in 0.4271738820243627s: None
+[2021-06-26 04:00:00,004: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-06-26 04:00:00,007: INFO/MainProcess] Task celery.backend_cleanup[33bc3935-2d26-4008-bbfa-5deb63cb9b3a] received
+[2021-06-26 04:00:00,008: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[33bc3935-2d26-4008-bbfa-5deb63cb9b3a] succeeded in 0.00021496799308806658s: None
+[2021-06-27 04:00:00,000: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-06-27 04:00:00,005: INFO/MainProcess] Task celery.backend_cleanup[6691d2fb-3863-4cb8-b691-22c7a0117b0a] received
+[2021-06-27 04:00:00,006: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[6691d2fb-3863-4cb8-b691-22c7a0117b0a] succeeded in 0.00014844804536551237s: None
+[2021-06-28 04:00:00,008: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-06-28 04:00:00,010: INFO/MainProcess] Task celery.backend_cleanup[c946a1e0-b1ab-4f5e-a1d3-c861152c56da] received
+[2021-06-28 04:00:00,011: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[c946a1e0-b1ab-4f5e-a1d3-c861152c56da] succeeded in 0.00024906592443585396s: None
+[2021-06-29 04:00:00,003: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-06-29 04:00:00,008: INFO/MainProcess] Task celery.backend_cleanup[13d12126-188d-4426-b8ec-6846ed27a10e] received
+[2021-06-29 04:00:00,009: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[13d12126-188d-4426-b8ec-6846ed27a10e] succeeded in 0.00021025596652179956s: None
+[2021-06-30 04:00:00,003: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-06-30 04:00:00,006: INFO/MainProcess] Task celery.backend_cleanup[95ffdf75-63f6-45cc-89a5-af529565a17c] received
+[2021-06-30 04:00:00,007: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[95ffdf75-63f6-45cc-89a5-af529565a17c] succeeded in 0.0001865800004452467s: None
+[2021-07-01 04:00:00,003: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-01 04:00:00,005: INFO/MainProcess] Task celery.backend_cleanup[b6055c7b-f896-4ad9-a4e0-7ec56537829e] received
+[2021-07-01 04:00:00,006: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[b6055c7b-f896-4ad9-a4e0-7ec56537829e] succeeded in 0.00014128698967397213s: None
+[2021-07-02 04:00:00,008: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-02 04:00:00,010: INFO/MainProcess] Task celery.backend_cleanup[b5a0948b-3ca3-4187-983e-f58456caeef3] received
+[2021-07-02 04:00:00,011: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[b5a0948b-3ca3-4187-983e-f58456caeef3] succeeded in 0.00014867400750517845s: None
+[2021-07-02 13:00:00,002: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-07-02 13:00:00,004: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[01e0a7dc-bb4e-420a-80b8-1ed37b2aa4b0] received
+[2021-07-02 13:00:00,018: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[01e0a7dc-bb4e-420a-80b8-1ed37b2aa4b0]: Sent weekly mail
+[2021-07-02 13:00:00,018: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[01e0a7dc-bb4e-420a-80b8-1ed37b2aa4b0]: {}
+[2021-07-02 13:00:00,201: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[01e0a7dc-bb4e-420a-80b8-1ed37b2aa4b0] succeeded in 0.19613756809849292s: None
+[2021-07-03 04:00:00,003: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-03 04:00:00,005: INFO/MainProcess] Task celery.backend_cleanup[ae15739c-e360-4fbb-93ec-14d7ff3edfdd] received
+[2021-07-03 04:00:00,006: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[ae15739c-e360-4fbb-93ec-14d7ff3edfdd] succeeded in 0.0001563450787216425s: None
+[2021-07-03 15:49:31,431: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[ee53aa59-12c8-465a-95ef-013779ae0e45] received
+[2021-07-03 15:49:31,432: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[ee53aa59-12c8-465a-95ef-013779ae0e45]: Sent registration mail
+[2021-07-03 15:49:34,087: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[ee53aa59-12c8-465a-95ef-013779ae0e45] succeeded in 2.655458448920399s: None
+[2021-07-03 19:10:34,057: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2021-07-03 19:11:04,173: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2021-07-03 19:11:09,218: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2021-07-03 19:12:00,008: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-03 19:12:00,010: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-04 04:00:00,003: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-04 04:00:00,005: INFO/MainProcess] Task celery.backend_cleanup[c1aa244b-d763-4540-95ee-9e3456b7a006] received
+[2021-07-04 04:00:00,006: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[c1aa244b-d763-4540-95ee-9e3456b7a006] succeeded in 0.00019644713029265404s: None
+[2021-07-04 19:12:00,001: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-04 19:12:00,002: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-05 04:00:00,005: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-05 04:00:00,010: INFO/MainProcess] Task celery.backend_cleanup[21bd93e8-95ff-4f3d-8d9e-6b09bec6f633] received
+[2021-07-05 04:00:00,011: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[21bd93e8-95ff-4f3d-8d9e-6b09bec6f633] succeeded in 0.00014833593741059303s: None
+[2021-07-05 19:12:00,003: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-05 19:12:00,006: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-06 04:00:00,003: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-06 04:00:00,005: INFO/MainProcess] Task celery.backend_cleanup[ab1b44fd-05fd-4e38-8175-e58634a44779] received
+[2021-07-06 04:00:00,006: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[ab1b44fd-05fd-4e38-8175-e58634a44779] succeeded in 0.00018376088701188564s: None
+[2021-07-06 19:12:00,004: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-06 19:12:00,010: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-07 04:00:00,003: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-07 04:00:00,005: INFO/MainProcess] Task celery.backend_cleanup[f2a3b354-fa23-4298-b518-f2dfe328352b] received
+[2021-07-07 04:00:00,007: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[f2a3b354-fa23-4298-b518-f2dfe328352b] succeeded in 0.00021541188471019268s: None
+[2021-07-07 19:12:00,003: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-07 19:12:00,001: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-08 04:00:00,003: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-08 04:00:00,008: INFO/MainProcess] Task celery.backend_cleanup[74dfb3e3-a8b8-4b77-92d3-3327cb4c1fc0] received
+[2021-07-08 04:00:00,009: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[74dfb3e3-a8b8-4b77-92d3-3327cb4c1fc0] succeeded in 0.000151362968608737s: None
+[2021-07-08 19:12:00,002: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-08 19:12:00,004: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-09 04:00:00,003: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-09 04:00:00,006: INFO/MainProcess] Task celery.backend_cleanup[ec2fa623-cc5c-42cd-920e-bc91e1b38fe5] received
+[2021-07-09 04:00:00,007: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[ec2fa623-cc5c-42cd-920e-bc91e1b38fe5] succeeded in 0.00016547180712223053s: None
+[2021-07-09 13:00:00,001: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-07-09 13:00:00,006: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[7d309aa3-1138-4b74-99da-da2a3096f083] received
+[2021-07-09 13:00:00,024: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[7d309aa3-1138-4b74-99da-da2a3096f083]: Sent weekly mail
+[2021-07-09 13:00:00,024: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[7d309aa3-1138-4b74-99da-da2a3096f083]: {}
+[2021-07-09 13:00:00,357: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[7d309aa3-1138-4b74-99da-da2a3096f083] succeeded in 0.35050844005309045s: None
+[2021-07-09 19:12:00,009: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-09 19:12:00,011: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-10 04:00:00,009: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-10 04:00:00,012: INFO/MainProcess] Task celery.backend_cleanup[4e6f4fd5-fd26-4d79-a53f-96c078177624] received
+[2021-07-10 04:00:00,013: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[4e6f4fd5-fd26-4d79-a53f-96c078177624] succeeded in 0.00019546295516192913s: None
+[2021-07-10 19:12:00,003: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-10 19:12:00,005: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-11 04:00:00,009: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-11 04:00:00,012: INFO/MainProcess] Task celery.backend_cleanup[3505b1fc-d1b8-4b1a-863d-c59015a964de] received
+[2021-07-11 04:00:00,013: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[3505b1fc-d1b8-4b1a-863d-c59015a964de] succeeded in 0.00014821789227426052s: None
+[2021-07-11 19:12:00,004: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-11 19:12:00,006: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-12 04:00:00,005: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-12 04:00:00,007: INFO/MainProcess] Task celery.backend_cleanup[fede703a-5256-4409-86cf-6a6bac9898f9] received
+[2021-07-12 04:00:00,008: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[fede703a-5256-4409-86cf-6a6bac9898f9] succeeded in 0.00020126509480178356s: None
+[2021-07-12 19:12:00,011: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-12 19:12:00,013: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-13 04:00:00,003: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-13 04:00:00,006: INFO/MainProcess] Task celery.backend_cleanup[63ded3e9-bb47-457a-ad9d-9fa857315884] received
+[2021-07-13 04:00:00,007: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[63ded3e9-bb47-457a-ad9d-9fa857315884] succeeded in 0.00014975806698203087s: None
+[2021-07-13 19:12:00,002: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-13 19:12:00,006: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-14 04:00:00,000: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-14 04:00:00,003: INFO/MainProcess] Task celery.backend_cleanup[82511217-aca7-467b-94cc-fb85501c58a3] received
+[2021-07-14 04:00:00,004: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[82511217-aca7-467b-94cc-fb85501c58a3] succeeded in 0.00014614383690059185s: None
+[2021-07-14 19:12:00,003: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-14 19:12:00,007: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-15 04:00:00,000: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-15 04:00:00,002: INFO/MainProcess] Task celery.backend_cleanup[73ff10b6-6a01-473d-a252-4a535ac69d30] received
+[2021-07-15 04:00:00,003: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[73ff10b6-6a01-473d-a252-4a535ac69d30] succeeded in 0.00016911933198571205s: None
