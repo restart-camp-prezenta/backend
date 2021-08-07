@@ -1314,3 +1314,495 @@ KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
 [2021-07-15 04:00:00,000: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
 [2021-07-15 04:00:00,002: INFO/MainProcess] Task celery.backend_cleanup[73ff10b6-6a01-473d-a252-4a535ac69d30] received
 [2021-07-15 04:00:00,003: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[73ff10b6-6a01-473d-a252-4a535ac69d30] succeeded in 0.00016911933198571205s: None
+[2021-07-15 19:12:00,001: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-15 19:12:00,003: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-16 04:00:00,000: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-16 04:00:00,004: INFO/MainProcess] Task celery.backend_cleanup[fadb11b4-7189-4d46-b6f2-c8a99ddf1f36] received
+[2021-07-16 04:00:00,005: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[fadb11b4-7189-4d46-b6f2-c8a99ddf1f36] succeeded in 0.00019675074145197868s: None
+[2021-07-16 13:00:00,000: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-07-16 13:00:00,002: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[215475fb-6edc-4651-9db4-31d9f47f14a9] received
+[2021-07-16 13:00:00,019: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[215475fb-6edc-4651-9db4-31d9f47f14a9]: Sent weekly mail
+[2021-07-16 13:00:00,019: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[215475fb-6edc-4651-9db4-31d9f47f14a9]: {}
+[2021-07-16 13:00:00,323: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[215475fb-6edc-4651-9db4-31d9f47f14a9] succeeded in 0.3196184248663485s: None
+[2021-07-16 19:12:00,000: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-16 19:12:00,004: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-17 04:00:00,001: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-17 04:00:00,006: INFO/MainProcess] Task celery.backend_cleanup[ab12d712-e87a-43cc-b12f-1f6674587efb] received
+[2021-07-17 04:00:00,007: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[ab12d712-e87a-43cc-b12f-1f6674587efb] succeeded in 0.000218244269490242s: None
+[2021-07-17 19:12:00,003: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-17 19:12:00,005: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-18 04:00:00,001: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-18 04:00:00,005: INFO/MainProcess] Task celery.backend_cleanup[c056b41d-0f19-4d24-be10-b4b6933f30d3] received
+[2021-07-18 04:00:00,006: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[c056b41d-0f19-4d24-be10-b4b6933f30d3] succeeded in 0.0001546097919344902s: None
+[2021-07-18 09:08:22,319: INFO/MainProcess] Task dashboard_app.tasks.send_contact_mail_task[d37e464a-7dd6-444b-88c8-ba827bdf84bd] received
+[2021-07-18 09:08:22,320: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_contact_mail_task[d37e464a-7dd6-444b-88c8-ba827bdf84bd]: Sent contact mail
+[2021-07-18 09:08:23,251: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_contact_mail_task[d37e464a-7dd6-444b-88c8-ba827bdf84bd] succeeded in 0.9310627290979028s: None
+[2021-07-18 10:14:11,654: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[6c36fac2-5aa4-4983-b461-93ef75f7b4a3] received
+[2021-07-18 10:14:11,655: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[6c36fac2-5aa4-4983-b461-93ef75f7b4a3]: Sent registration mail
+[2021-07-18 10:14:14,167: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[6c36fac2-5aa4-4983-b461-93ef75f7b4a3] succeeded in 2.51176728727296s: None
+[2021-07-18 10:14:40,588: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[f4816053-aa79-4aa1-b017-00f277cd822d] received
+[2021-07-18 10:14:40,589: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[f4816053-aa79-4aa1-b017-00f277cd822d]: Sent registration mail
+[2021-07-18 10:14:42,852: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[f4816053-aa79-4aa1-b017-00f277cd822d] succeeded in 2.2627528309822083s: None
+[2021-07-18 10:18:10,063: INFO/MainProcess] Task dashboard_app.tasks.send_registrations_mail_task[38fe969f-e77f-4bf9-ad37-3820ee8193c8] received
+[2021-07-18 10:18:10,063: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_registrations_mail_task[38fe969f-e77f-4bf9-ad37-3820ee8193c8]: Sent registration mail
+[2021-07-18 10:18:12,304: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_registrations_mail_task[38fe969f-e77f-4bf9-ad37-3820ee8193c8] succeeded in 2.2404848989099264s: None
+[2021-07-18 19:12:00,001: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-18 19:12:00,006: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-19 04:00:00,001: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-19 04:00:00,005: INFO/MainProcess] Task celery.backend_cleanup[67400f2f-57a4-4e52-8c52-21c44741f392] received
+[2021-07-19 04:00:00,006: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[67400f2f-57a4-4e52-8c52-21c44741f392] succeeded in 0.0001811138354241848s: None
+[2021-07-19 19:12:00,005: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-19 19:12:00,007: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-20 04:00:00,001: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-20 04:00:00,004: INFO/MainProcess] Task celery.backend_cleanup[99f9f7d7-cad1-4b2d-9a85-55899dd7a708] received
+[2021-07-20 04:00:00,005: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[99f9f7d7-cad1-4b2d-9a85-55899dd7a708] succeeded in 0.00015025585889816284s: None
+[2021-07-20 19:12:00,009: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-20 19:12:00,012: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-21 04:00:00,008: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-21 04:00:00,010: INFO/MainProcess] Task celery.backend_cleanup[08d9ae00-076d-4aea-9c74-c09d454813f4] received
+[2021-07-21 04:00:00,011: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[08d9ae00-076d-4aea-9c74-c09d454813f4] succeeded in 0.0001846509985625744s: None
+[2021-07-21 19:12:00,006: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-21 19:12:00,011: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-22 04:00:00,000: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-22 04:00:00,003: INFO/MainProcess] Task celery.backend_cleanup[0512e8f1-8b05-442a-ae38-3f27dede763d] received
+[2021-07-22 04:00:00,003: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[0512e8f1-8b05-442a-ae38-3f27dede763d] succeeded in 0.00018582632765173912s: None
+[2021-07-22 19:12:00,003: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-22 19:12:00,006: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-23 04:00:00,005: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-23 04:00:00,010: INFO/MainProcess] Task celery.backend_cleanup[316b2a55-c584-4647-aec2-22dc3704670c] received
+[2021-07-23 04:00:00,011: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[316b2a55-c584-4647-aec2-22dc3704670c] succeeded in 0.00015382235869765282s: None
+[2021-07-23 13:00:00,004: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-07-23 13:00:00,006: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[26ad8fcf-584b-4ec4-809b-cfe4859eeef4] received
+[2021-07-23 13:00:00,045: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[26ad8fcf-584b-4ec4-809b-cfe4859eeef4]: Sent weekly mail
+[2021-07-23 13:00:00,045: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[26ad8fcf-584b-4ec4-809b-cfe4859eeef4]: {'gabi1611@yahoo.com': [('Introducere în Educație Financiară', datetime.datetime(2021, 7, 26, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=3TvPxGLjSspPjop5-fKrdsuAU%2FagvIQ27IDYg2%2FmrQw.eyJ1IjoiaH')], 'malaerunicoleta@yahoo.com': [('Introducere în Educație Financiară', datetime.datetime(2021, 7, 26, 18, 30, tzinfo=<UTC>), 'https://shoutout.wix.com/so/16NMO68oV/c?w=3TvPxGLjSspPjop5-fKrdsuAU%2FagvIQ27IDYg2%2FmrQw.eyJ1IjoiaH')]}
+[2021-07-23 13:00:02,239: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[26ad8fcf-584b-4ec4-809b-cfe4859eeef4] succeeded in 2.231464284006506s: None
+[2021-07-23 19:12:00,004: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-23 19:12:00,006: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-24 04:00:00,002: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-24 04:00:00,007: INFO/MainProcess] Task celery.backend_cleanup[c776e02d-560e-4e81-899b-d171af59b7de] received
+[2021-07-24 04:00:00,008: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[c776e02d-560e-4e81-899b-d171af59b7de] succeeded in 0.0001767282374203205s: None
+[2021-07-24 19:12:00,001: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-24 19:12:00,003: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-25 04:00:00,004: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-25 04:00:00,009: INFO/MainProcess] Task celery.backend_cleanup[6129fcf8-daf0-4417-94f3-54dc15b2675c] received
+[2021-07-25 04:00:00,010: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[6129fcf8-daf0-4417-94f3-54dc15b2675c] succeeded in 0.00019512977451086044s: None
+[2021-07-25 19:12:00,001: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-25 19:12:00,003: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-26 04:00:00,003: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-26 04:00:00,006: INFO/MainProcess] Task celery.backend_cleanup[7abf79e3-6a42-4abd-a9fb-b58a4da82edf] received
+[2021-07-26 04:00:00,007: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[7abf79e3-6a42-4abd-a9fb-b58a4da82edf] succeeded in 0.0001566912978887558s: None
+[2021-07-26 19:12:00,001: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-26 19:12:00,005: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-27 04:00:00,002: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-27 04:00:00,006: INFO/MainProcess] Task celery.backend_cleanup[76ed9cdf-4509-44b6-870a-817af7a58004] received
+[2021-07-27 04:00:00,007: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[76ed9cdf-4509-44b6-870a-817af7a58004] succeeded in 0.00019577983766794205s: None
+[2021-07-27 19:12:00,005: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-27 19:12:00,008: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-28 04:00:00,006: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-28 04:00:00,008: INFO/MainProcess] Task celery.backend_cleanup[09db95f7-3cb8-4a37-b9b8-5f335e338903] received
+[2021-07-28 04:00:00,010: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[09db95f7-3cb8-4a37-b9b8-5f335e338903] succeeded in 0.00021249102428555489s: None
+[2021-07-28 19:12:00,002: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-28 19:12:00,004: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-29 04:00:00,006: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-29 04:00:00,009: INFO/MainProcess] Task celery.backend_cleanup[2058a70c-ba58-4eb6-9b3f-dbe0d9cd5990] received
+[2021-07-29 04:00:00,010: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[2058a70c-ba58-4eb6-9b3f-dbe0d9cd5990] succeeded in 0.00020614499226212502s: None
+[2021-07-29 19:12:00,002: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-29 19:12:00,004: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-30 04:00:00,001: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-30 04:00:00,003: INFO/MainProcess] Task celery.backend_cleanup[85157e38-3df8-4645-bd8a-9ab7316980ac] received
+[2021-07-30 04:00:00,004: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[85157e38-3df8-4645-bd8a-9ab7316980ac] succeeded in 0.00019934400916099548s: None
+[2021-07-30 13:00:00,001: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-07-30 13:00:00,007: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[68a2fe4e-50a3-4a7d-967f-e7541af0ee31] received
+[2021-07-30 13:00:00,036: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[68a2fe4e-50a3-4a7d-967f-e7541af0ee31]: Sent weekly mail
+[2021-07-30 13:00:00,036: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[68a2fe4e-50a3-4a7d-967f-e7541af0ee31]: {}
+[2021-07-30 13:00:00,346: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[68a2fe4e-50a3-4a7d-967f-e7541af0ee31] succeeded in 0.3380517140030861s: None
+[2021-07-30 19:12:00,005: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-30 19:12:00,007: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-07-31 04:00:00,002: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-07-31 04:00:00,005: INFO/MainProcess] Task celery.backend_cleanup[591046fb-8f4b-42e2-8c43-6e742bdfc59d] received
+[2021-07-31 04:00:00,007: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[591046fb-8f4b-42e2-8c43-6e742bdfc59d] succeeded in 0.00022769905626773834s: None
+[2021-07-31 19:12:00,001: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-07-31 19:12:00,004: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-08-01 04:00:00,004: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-08-01 04:00:00,007: INFO/MainProcess] Task celery.backend_cleanup[642a159a-7742-4502-9155-ee6ec81c9deb] received
+[2021-08-01 04:00:00,008: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[642a159a-7742-4502-9155-ee6ec81c9deb] succeeded in 0.0001497305929660797s: None
+[2021-08-01 19:12:00,006: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-08-01 19:12:00,008: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-08-02 04:00:00,006: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-08-02 04:00:00,009: INFO/MainProcess] Task celery.backend_cleanup[4da7b5ff-270e-41f6-9405-faf9f9df7056] received
+[2021-08-02 04:00:00,010: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[4da7b5ff-270e-41f6-9405-faf9f9df7056] succeeded in 0.0001887008547782898s: None
+[2021-08-02 19:12:00,001: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-08-02 19:12:00,003: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-08-03 04:00:00,006: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-08-03 04:00:00,009: INFO/MainProcess] Task celery.backend_cleanup[82753fbd-11d8-4310-a03a-e2ddd82b9627] received
+[2021-08-03 04:00:00,010: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[82753fbd-11d8-4310-a03a-e2ddd82b9627] succeeded in 0.0001910901628434658s: None
+[2021-08-03 19:12:00,010: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-08-03 19:12:00,013: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-08-04 04:00:00,002: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-08-04 04:00:00,004: INFO/MainProcess] Task celery.backend_cleanup[ff281884-479d-4def-a9af-8588acdcdd9e] received
+[2021-08-04 04:00:00,005: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[ff281884-479d-4def-a9af-8588acdcdd9e] succeeded in 0.00022813910618424416s: None
+[2021-08-04 19:12:00,001: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-08-04 19:12:00,004: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-08-05 04:00:00,005: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-08-05 04:00:00,012: INFO/MainProcess] Task celery.backend_cleanup[fec776df-e654-486c-ae23-537fd74c6246] received
+[2021-08-05 04:00:00,013: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[fec776df-e654-486c-ae23-537fd74c6246] succeeded in 0.00020257290452718735s: None
+[2021-08-05 19:12:00,005: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-08-05 19:12:00,007: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-08-06 04:00:00,002: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-08-06 04:00:00,007: INFO/MainProcess] Task celery.backend_cleanup[271cf737-8632-4a10-b0ec-d42629d1120a] received
+[2021-08-06 04:00:00,009: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[271cf737-8632-4a10-b0ec-d42629d1120a] succeeded in 0.00021182792261242867s: None
+[2021-08-06 13:00:00,003: INFO/MainProcess] Scheduler: Sending due task reminder_mail (dashboard_app.tasks.send_remainder_mail)
+[2021-08-06 13:00:00,005: INFO/MainProcess] Task dashboard_app.tasks.send_remainder_mail[92a0da91-f776-4526-928b-02d1d40eb11a] received
+[2021-08-06 13:00:00,021: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[92a0da91-f776-4526-928b-02d1d40eb11a]: Sent weekly mail
+[2021-08-06 13:00:00,022: INFO/ForkPoolWorker-4] dashboard_app.tasks.send_remainder_mail[92a0da91-f776-4526-928b-02d1d40eb11a]: {}
+[2021-08-06 13:00:00,258: INFO/ForkPoolWorker-4] Task dashboard_app.tasks.send_remainder_mail[92a0da91-f776-4526-928b-02d1d40eb11a] succeeded in 0.2518342309631407s: None
+[2021-08-06 19:12:00,002: INFO/MainProcess] Scheduler: Sending due task 3 days ago mail (dashboard_app.tasks.send_3_days_registration_mail_task)
+[2021-08-06 19:12:00,005: ERROR/MainProcess] Received unregistered task of type 'dashboard_app.tasks.send_3_days_registration_mail_task'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+Traceback (most recent call last):
+  File "/home/dev/backend/restartCampAPI/venv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 581, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'dashboard_app.tasks.send_3_days_registration_mail_task'
+[2021-08-07 04:00:00,004: INFO/MainProcess] Scheduler: Sending due task celery.backend_cleanup (celery.backend_cleanup)
+[2021-08-07 04:00:00,008: INFO/MainProcess] Task celery.backend_cleanup[cb1f8f75-907c-45ee-86a6-7036f825e59e] received
+[2021-08-07 04:00:00,009: INFO/ForkPoolWorker-4] Task celery.backend_cleanup[cb1f8f75-907c-45ee-86a6-7036f825e59e] succeeded in 0.00017333822324872017s: None

@@ -123,9 +123,10 @@ class Learner(models.Model):
         ('LinkedIn','LinkedIn'),
         ('Instagram', 'Instagram'),
         ('TikTok', 'TikTok'),
-        ('De la un prieten / o ruda', 'De la un prieten / o ruda'),
-        ('De la un coleg / colaborator', 'De la un coleg / colaborator'),
+        ('De la un prieten/o ruda', 'De la un prieten/o ruda'),
+        ('De la un colaborator / client', 'De la un colaborator / client'),
         ('De la managerul meu', 'De la managerul meu'),
+        ('De la unul dintre angaja?ii mei', 'De la unul dintre angaja?ii mei'),
         ('Alta sursa', 'Alta sursa'),
     ] 
 
